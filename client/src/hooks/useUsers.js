@@ -1,10 +1,10 @@
 import { useQuery } from '@tanstack/react-query'
-import { getClients } from './../services/clients'
+import { getUsers } from '../services/users'
 
-export const useClients = () => {
+export const useUsers = () => {
 	const { data, isLoading, isError, error } = useQuery({
-		queryKey: ['getClients'],
-		queryFn: () => getClients(),
+		queryKey: ['getUsers'],
+		queryFn: () => getUsers(),
 		config: {
 			retry: 1,
 			retryDelay: 1000,

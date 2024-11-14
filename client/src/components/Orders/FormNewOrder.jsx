@@ -56,7 +56,7 @@ export const FormNewOrder = () => {
 		<>
 			<form action='' onSubmit={onSubmit}>
 				<div className='inline-block w-full'>
-					<div className='w-[33%] flex flex-col gap-4 sticky top-4 float-start'>
+					<div className='w-[33%] flex flex-col gap-4 sticky top-20 float-start'>
 						<div className='bg-slate-100 rounded-xl'>
 							<div className='flex justify-between items-center py-4 bg-primary p-4 rounded-t-xl'>
 								<h1 className='text-slate-200 text-lg'>Detalles</h1>

@@ -44,7 +44,9 @@ export const ItemProductos = ({
 								size='sm'
 								onClick={() => handleRemoveItem({ index })}
 							>
-								<ITrashX />
+								<span className='w-4 h-4'>
+									<ITrashX />
+								</span>
 							</Button>
 						)}
 					</div>

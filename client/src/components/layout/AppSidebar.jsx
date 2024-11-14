@@ -51,10 +51,14 @@ export const AppSidebar = () => {
 
 								<ItemSidebar to='/users' text='Usuarios' icon='IUser' />
 
+								<ItemSidebar to='/clients' text='Clientes' icon='IUSers' />
+
+								<ItemSidebar to='/orders' text='Ordenes' icon='IList' />
+
 								<ItemSidebar
-									to='/orders'
-									text='Lista de Ordenes'
-									icon='IList'
+									to='/products'
+									text='Productos'
+									icon='IListDetails'
 								/>
 							</SidebarMenu>
 						</SidebarGroupContent>

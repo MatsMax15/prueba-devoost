@@ -29,6 +29,20 @@ export const IUser = () => {
 	)
 }
 
+export const IUSers = () => {
+	return (
+		<svg {...PropsIcons}>
+			<path stroke='none' d='M0 0h24v24H0z' fill='none' />
+			<path d='M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0' />
+			<path d='M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1' />
+			<path d='M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0' />
+			<path d='M17 10h2a2 2 0 0 1 2 2v1' />
+			<path d='M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0' />
+			<path d='M3 13v-1a2 2 0 0 1 2 -2h2' />
+		</svg>
+	)
+}
+
 export const IList = () => {
 	return (
 		<svg {...PropsIcons}>
@@ -39,6 +53,20 @@ export const IList = () => {
 			<path d='M5 6l0 .01' />
 			<path d='M5 12l0 .01' />
 			<path d='M5 18l0 .01' />
+		</svg>
+	)
+}
+
+export const IListDetails = () => {
+	return (
+		<svg {...PropsIcons}>
+			<path stroke='none' d='M0 0h24v24H0z' fill='none' />
+			<path d='M13 5h8' />
+			<path d='M13 9h5' />
+			<path d='M13 15h8' />
+			<path d='M13 19h5' />
+			<path d='M3 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z' />
+			<path d='M3 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z' />
 		</svg>
 	)
 }
@@ -101,6 +129,17 @@ export const IDotsVertical = () => {
 			<path d='M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0' />
 			<path d='M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0' />
 			<path d='M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0' />
+		</svg>
+	)
+}
+
+export const ILogout = () => {
+	return (
+		<svg {...PropsIcons}>
+			<path stroke='none' d='M0 0h24v24H0z' fill='none' />
+			<path d='M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2' />
+			<path d='M9 12h12l-3 -3' />
+			<path d='M18 15l3 -3' />
 		</svg>
 	)
 }

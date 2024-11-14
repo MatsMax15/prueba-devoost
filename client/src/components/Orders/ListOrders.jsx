@@ -1,4 +1,7 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { GetOrders } from './../../hooks/useOrders'
+import { numberFormat } from '../../helpers/numberFormat'
+
 import { LoadingResults } from '../layout/LoadingResults'
 import {
 	DropdownMenu,
@@ -7,9 +10,7 @@ import {
 	DropdownMenuTrigger,
 } from '../ui'
 import { IDotsVertical } from '../ui/icons'
-import { GetOrders } from './../../hooks/useOrders'
-import { useNavigate } from 'react-router-dom'
-import { numberFormat } from '../../helpers/numberFormat'
+import { MenuActions } from '../layout'
 
 export const ListOrders = () => {
 	const navigate = useNavigate()
@@ -62,22 +63,7 @@ export const ListOrders = () => {
 						</div>
 
 						<div className='flex items-center justify-end w-[5%] md:w-[3%]'>
-							<DropdownMenu>
-								<DropdownMenuTrigger>
-									<span className='flex w-5 h-5 rounded-full'>
-										<IDotsVertical />
-									</span>
-								</DropdownMenuTrigger>
-								<DropdownMenuContent align='end'>
-									<DropdownMenuItem>
-										<Link to={`/order/${id}`} className='w-full'>
-											Ver
-										</Link>
-									</DropdownMenuItem>
-									<DropdownMenuItem>Editar</DropdownMenuItem>
-									<DropdownMenuItem>Cancelar</DropdownMenuItem>
-								</DropdownMenuContent>
-							</DropdownMenu>
+							<MenuActions id={id} to={['order', '']} />
 						</div>
 					</div>
 				))}

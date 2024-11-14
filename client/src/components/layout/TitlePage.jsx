@@ -19,7 +19,7 @@ export const TitlePage = ({ children, title }) => {
 						<IChevronLeft />
 					</button>
 
-					<h1 className='text-2xl font-bold text-gray-600'>{title}</h1>
+					<h1 className='text-2xl font-medium text-gray-600'>{title}</h1>
 				</div>
 
 				{children}

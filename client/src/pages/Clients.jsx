@@ -1,18 +1,18 @@
 import { Link } from 'react-router-dom'
 import {
 	ContainerResults,
-	HeaderResults,
-	ListOrders,
-	Separator,
+	HeaderResultClients,
+	ListClients,
 	TitlePage,
-} from '../components/'
+} from '../components'
+import { Separator } from '../components/ui'
 
-export const OrdersPage = () => {
+export const ClientsPage = () => {
 	return (
 		<>
 			<div className='p-8'>
 				<div className='bg-slate-50 rounded-xl sticky top-16 shadow-md'>
-					<TitlePage title='Lista de Ordenes' />
+					<TitlePage title='Clientes' />
 
 					<Separator />
 
@@ -21,15 +21,15 @@ export const OrdersPage = () => {
 							to='/order/new'
 							className='bg-primary py-2 px-4 text-slate-300 rounded-xl text-sm hover:bg-primary-foreground hover:text-slate-100'
 						>
-							+ Nueva Orden
+							+ Nueva Cliente
 						</Link>
 					</div>
 
-					<HeaderResults />
+					<HeaderResultClients />
 				</div>
 
 				<ContainerResults>
-					<ListOrders />
+					<ListClients />
 				</ContainerResults>
 			</div>
 		</>

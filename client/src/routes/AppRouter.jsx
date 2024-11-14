@@ -6,6 +6,11 @@ import {
 	OrderPage,
 	OrdersPage,
 	NewOrder,
+	UsersPage,
+	ClientsPage,
+	ProductsPage,
+	ConfigPage,
+	ProfilePage,
 } from '../pages'
 
 export const router = createBrowserRouter([
@@ -18,6 +23,8 @@ export const router = createBrowserRouter([
 				index: true,
 				element: <HomePage />,
 			},
+
+			// Orders
 			{
 				path: 'orders',
 				element: <OrdersPage />,
@@ -29,6 +36,33 @@ export const router = createBrowserRouter([
 			{
 				path: 'order/new',
 				element: <NewOrder />,
+			},
+
+			// Users
+			{
+				path: 'users',
+				element: <UsersPage />,
+			},
+			{
+				path: 'profile',
+				element: <ProfilePage />,
+			},
+
+			// Clients
+			{
+				path: 'clients',
+				element: <ClientsPage />,
+			},
+
+			// Products
+			{
+				path: 'products',
+				element: <ProductsPage />,
+			},
+
+			{
+				path: 'config',
+				element: <ConfigPage />,
 			},
 		],
 	},

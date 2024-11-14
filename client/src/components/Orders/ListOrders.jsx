@@ -63,7 +63,7 @@ export const ListOrders = () => {
 						</div>
 
 						<div className='flex items-center justify-end w-[5%] md:w-[3%]'>
-							<MenuActions id={id} to={['order', '']} />
+							<MenuActions id={id} to={['order', `order/edit`]} />
 						</div>
 					</div>
 				))}

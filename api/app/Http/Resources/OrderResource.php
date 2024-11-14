@@ -14,7 +14,7 @@ class OrderResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        $fecha = date('d-m-Y', strtotime($this->created_at));
+        $fecha = date('Y-m-d', strtotime($this->created_at));
 
         return [
             'id' => $this->id,

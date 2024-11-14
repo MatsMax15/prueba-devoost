@@ -13,8 +13,8 @@ export const SelectOrderClient = ({
 
 	const clientSelected = watch('client')
 	useEffect(() => {
-		if (clientSelected) {
-			const client = response.data.find(
+		if (clientSelected && response) {
+			const client = response?.data?.find(
 				(item) => item.id === parseInt(clientSelected)
 			)
 

@@ -11,6 +11,7 @@ import {
 	ProductsPage,
 	ConfigPage,
 	ProfilePage,
+	UpdateOrder,
 } from '../pages'
 
 export const router = createBrowserRouter([
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
 			{
 				path: 'order/new',
 				element: <NewOrder />,
+			},
+			{
+				path: 'order/edit/:id',
+				element: <UpdateOrder />,
 			},
 
 			// Users

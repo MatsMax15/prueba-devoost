@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useCalcTotales } from '../../hooks/useCalcTotales'
 import { useProducts } from '../../hooks/useProducts'
 
@@ -12,9 +13,17 @@ export const ItemProductos = ({
 	setValue,
 	handleChangeProduct,
 }) => {
+	console.log(items)
+
 	const { data, isError, isLoading } = useProducts()
 
 	const { setValuesItems, calcSubtotal } = useCalcTotales({ watch, setValue })
+
+	useEffect(() => {
+		if (!data) return
+
+		setValuesItems(items)
+	}, [data])
 
 	if (isLoading) return <p>Cargando productos...</p>
 

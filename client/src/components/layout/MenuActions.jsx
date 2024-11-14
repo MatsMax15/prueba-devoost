@@ -23,7 +23,11 @@ export const MenuActions = ({ id, to }) => {
 						Ver
 					</Link>
 				</DropdownMenuItem>
-				<DropdownMenuItem>Editar</DropdownMenuItem>
+				<DropdownMenuItem>
+					<Link to={`/${toEdit}/${id}`} className='w-full'>
+						Editar
+					</Link>
+				</DropdownMenuItem>
 				<DropdownMenuItem>Cancelar</DropdownMenuItem>
 			</DropdownMenuContent>
 		</DropdownMenu>
